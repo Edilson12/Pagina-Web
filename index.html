@@ -3,249 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winner Europa | Tu Comunidad de Sorteos Diarios</title>
+    
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://winnereuropa.com/favicon.png">
-    <title>Winner Europa | Comunidad y Membresía Exclusiva</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 
-    <!-- Meta etiquetas para redes sociales y WhatsApp (Open Graph) -->
-    <meta property="og:title" content="Winner Europa | Comunidad y Membresía Exclusiva">
-    <meta property="og:description" content="Tu espacio de conexión, aprendizaje y crecimiento exclusivo en Europa. Accede a recursos, soporte y una red activa.">
+    <!-- Meta-tags para vista previa en redes sociales -->
+    <meta property="og:title" content="Winner Europa - Sorteos Diarios">
+    <meta property="og:description" content="Participa de lunes a viernes en 3 sorteos diarios con premios de hasta 180 Fr. por solo 15 Fr./semana.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://winnereuropa.com">
-    <meta property="og:image" content="https://winnereuropa.com/og-image.jpg">
-    <meta property="og:image:width" content="512">
-    <meta property="og:image:height" content="512">
-    <style>
-        :root {
-            --primary-color: #10b981;
-            --primary-hover: #059669;
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-color: #f8fafc;
-            --text-secondary: #94a3b8;
-        }
 
+    <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
-
         body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            padding: 20px;
+            color: #2d3748;
+            background-color: #f7fafc;
         }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
-
         header {
-            text-align: center;
+            background-color: #1a365d;
+            color: #ffffff;
             padding: 40px 20px;
+            text-align: center;
         }
-
-        h1 {
+        header h1 {
             font-size: 2.5rem;
-            margin-bottom: 15px;
-            color: #ffffff;
+            margin-bottom: 10px;
         }
-
-        p.hero-subtitle {
+        header p {
             font-size: 1.2rem;
-            color: var(--text-secondary);
-            margin-bottom: 30px;
+            color: #e2e8f0;
+            max-width: 600px;
+            margin: 0 auto 25px;
         }
-
-        .cta-button {
+        .btn-app {
             display: inline-block;
-            background-color: var(--primary-color);
+            background-color: #38a169;
             color: #ffffff;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: bold;
             padding: 15px 30px;
             border-radius: 8px;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.2s ease;
         }
-
-        .cta-button:hover {
-            background-color: var(--primary-hover);
+        .btn-app:hover {
+            background-color: #2f855a;
         }
-
-        section {
-            background-color: var(--card-bg);
-            border-radius: 12px;
-            padding: 30px;
-            margin-top: 30px;
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
-
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #334155;
-            padding-bottom: 10px;
+        .prizes-grid {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
         }
+        .prize-card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 20px 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            text-align: center;
+            min-width: 200px;
+        }
+        .prize-card.gold { border-top: 5px solid #ecc94b; }
+        .prize-card.silver { border-top: 5px solid #cbd5e0; }
+        .prize-card.bronze { border-top: 5px solid #ed8936; }
+        .prize-card h3 { font-size: 1.1rem; color: #4a5568; }
+        .prize-card p { font-size: 1.8rem; font-weight: bold; color: #1a365d; }
 
-        .grid {
+        .steps-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
             margin-top: 20px;
         }
-
-        .card {
-            background-color: #334155;
-            padding: 20px;
-            border-radius: 8px;
+        .step-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
         }
-
-        .card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            color: var(--primary-color);
-        }
-
-        .faq-item {
-            margin-bottom: 20px;
-        }
-
-        .faq-item h3 {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-        }
-
-        .faq-item p {
-            color: var(--text-secondary);
-        }
+        .step-icon { font-size: 2rem; margin-bottom: 10px; }
+        .step-tag { font-size: 0.85rem; font-weight: bold; color: #2b6cb0; text-transform: uppercase; }
+        .step-card h4 { margin: 5px 0 10px; color: #1a365d; font-size: 1.2rem; }
+        .step-card p { color: #4a5568; font-size: 0.95rem; line-height: 1.5; }
 
         footer {
+            background-color: #0f172a;
+            color: #94a3b8;
             text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            border-top: 1px solid #334155;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+            margin-top: 40px;
         }
-
-        footer p {
-            margin-bottom: 8px;
-        }
+        footer a { color: #cbd5e0; text-decoration: underline; }
     </style>
 </head>
 <body>
 
+    <!-- Encabezado / Hero Banner -->
+    <header>
+        <h1>🍀 Winner Europa</h1>
+        <p>Tu comunidad de sorteos diarios en Suiza y Europa. Con solo 15 Fr. a la semana participas por 180 Fr. en premios todos los días.</p>
+        <a href="https://edilson12.github.io/winner-europa/" target="_blank" class="btn-app">🚀 Acceder a la App Winner Europa</a>
+    </header>
+
     <div class="container">
-        <!-- Encabezado Principal -->
-        <header>
-            <h1>Únete a la Comunidad Winner Europa</h1>
-            <p class="hero-subtitle">Tu espacio de conexión, aprendizaje y crecimiento exclusivo en Europa. Accede a recursos, soporte y una red de contactos activa.</p>
-            <a href="https://edilson12.github.io/winner-europa/
-" class="cta-button" target="_blank">🚀 Acceder a la App Winner Europa</a>
-        </header>
 
-        <!-- Beneficios -->
-        <section>
-            <h2>¿Qué incluye tu Membresía?</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Red Exclusiva</h3>
-                    <p>Conéctate con otros miembros y amplía tu red de contactos en la región.</p>
-                </div>
-                <div class="card">
-                    <h3>Soporte y Orientación</h3>
-                    <p>Acceso a guías, recursos prácticos y acompañamiento continuo.</p>
-                </div>
-                <div class="card">
-                    <h3>Eventos y Contenido</h3>
-                    <p>Participa en actividades y capacitaciones diseñadas para la comunidad.</p>
-                </div>
+        <!-- Sección: Resumen de Premios -->
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h2 style="font-size: 2rem; color: #1a365d; margin-bottom: 10px;">🏆 3 Sorteos Diarios (Lunes a Viernes)</h2>
+            <p style="color: #718096; font-size: 1.1rem;">Con la elección de un solo número participas en las tres oportunidades del día:</p>
+        </div>
+
+        <div class="prizes-grid">
+            <div class="prize-card gold">
+                <h3>🥇 1.er Sorteo</h3>
+                <p>100 Fr.</p>
             </div>
+            <div class="prize-card silver">
+                <h3>🥈 2.º Sorteo</h3>
+                <p>50 Fr.</p>
+            </div>
+            <div class="prize-card bronze">
+                <h3>🥉 3.er Sorteo</h3>
+                <p>30 Fr.</p>
+            </div>
+        </div>
+
         <!-- Sección: Cómo Funciona el Juego -->
-<section style="padding: 50px 20px; background-color: #f8fafc; font-family: sans-serif;">
-    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-        <h2 style="font-size: 2.2rem; color: #1a365d; margin-bottom: 10px;">🎲 ¿Cómo Funciona el Juego?</h2>
-        <p style="font-size: 1.2rem; color: #4a5568; margin-bottom: 30px;">
-            Con tu membresía activa de <strong>15 Fr./semana</strong>, participas de lunes a viernes en 3 sorteos diarios. ¡Repartimos <strong>180 Fr. todos los días</strong>!
+        <div style="text-align: center; margin-top: 50px; margin-bottom: 20px;">
+            <h2 style="font-size: 2rem; color: #1a365d;">🎲 ¿Cómo Funciona el Juego?</h2>
+            <p style="color: #718096; font-size: 1.1rem;">Sigue estos 4 pasos dentro de nuestra App oficial:</p>
+        </div>
+
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-icon">📱</div>
+                <span class="step-tag">Paso 1</span>
+                <h4>Activa tu Membresía</h4>
+                <p>Inicia sesión en la App Winner Europa y mantén activa tu suscripción semanal de 15 Fr.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-icon">🔢</div>
+                <span class="step-tag">Paso 2</span>
+                <h4>Escoge tu Número</h4>
+                <p>Presiona <strong>"Escoge tu número para hoy"</strong>. Tu número queda 🔒 <em>bloqueado exclusivamente para ti</em> ese día.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-icon">🍀</div>
+                <span class="step-tag">Paso 3</span>
+                <h4>3 Oportunidades</h4>
+                <p>De lunes a viernes tu número elegido participa automáticamente en los 3 sorteos diarios (100 Fr., 50 Fr. y 30 Fr.).</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-icon">📺</div>
+                <span class="step-tag">Paso 4</span>
+                <h4>Sorteo en Vivo (8 PM)</h4>
+                <p>Presiona <strong>"Ver sorteo en vivo"</strong> en la App a las 20:00 hs para seguir la transmisión en directo por YouTube.</p>
+            </div>
+        </div>
+
+        <!-- Botón de Acción Secundario -->
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="URL_DE_TU_APP_AQUI" target="_blank" class="btn-app">Entrar a la App y Seleccionar mi Número</a>
+        </div>
+
+    </div>
+
+    <!-- Pie de Página y Cumplimiento nLPD -->
+    <footer>
+        <p>&copy; 2026 Winner Europa. Todos los derechos reservados.</p>
+        <p style="margin-top: 10px; font-size: 0.8rem; color: #64748b;">
+            Cumplimiento con la Ley Federal de Protección de Datos de Suiza (nLPD). Los datos recopilados se utilizan únicamente para la gestión interna de la membresía.
         </p>
+    </footer>
 
-        <!-- Tarjetas de Premios Diarios -->
-        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
-            <div style="background: #ffffff; border-radius: 10px; padding: 15px 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-top: 4px solid #ecc94b;">
-                <h3 style="margin: 0; color: #2d3748; font-size: 1.1rem;">🥇 1.er Sorteo</h3>
-                <p style="margin: 5px 0 0; font-size: 1.5rem; font-weight: bold; color: #2b6cb0;">100 Fr.</p>
-            </div>
-            <div style="background: #ffffff; border-radius: 10px; padding: 15px 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-top: 4px solid #cbd5e0;">
-                <h3 style="margin: 0; color: #2d3748; font-size: 1.1rem;">🥈 2.º Sorteo</h3>
-                <p style="margin: 5px 0 0; font-size: 1.5rem; font-weight: bold; color: #2b6cb0;">50 Fr.</p>
-            </div>
-            <div style="background: #ffffff; border-radius: 10px; padding: 15px 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-top: 4px solid #ed8936;">
-                <h3 style="margin: 0; color: #2d3748; font-size: 1.1rem;">🥉 3.er Sorteo</h3>
-                <p style="margin: 5px 0 0; font-size: 1.5rem; font-weight: bold; color: #2b6cb0;">30 Fr.</p>
-            </div>
-        </div>
-
-        <!-- Bloques Explicativos de los Pasos -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; text-align: left;">
-            
-            <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
-                <div style="font-size: 2rem; margin-bottom: 10px;">📱</div>
-                <span style="font-size: 0.85rem; font-weight: bold; color: #2b6cb0; text-transform: uppercase;">Paso 1</span>
-                <h4 style="margin: 5px 0 10px; color: #1a365d; font-size: 1.2rem;">Activa tu Membresía</h4>
-                <p style="color: #4a5568; margin: 0; font-size: 0.95rem; line-height: 1.5;">Inicia sesión en la App Winner Europa y mantén activa tu suscripción semanal de 15 Fr.</p>
-            </div>
-
-            <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
-                <div style="font-size: 2rem; margin-bottom: 10px;">🔢</div>
-                <span style="font-size: 0.85rem; font-weight: bold; color: #2b6cb0; text-transform: uppercase;">Paso 2</span>
-                <h4 style="margin: 5px 0 10px; color: #1a365d; font-size: 1.2rem;">Escoge tu Número</h4>
-                <p style="color: #4a5568; margin: 0; font-size: 0.95rem; line-height: 1.5;">Presiona <strong>"Escoge tu número para hoy"</strong>. Tu número elegido queda 🔒 <em>bloqueado exclusivamente para ti</em> ese día.</p>
-            </div>
-
-            <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
-                <div style="font-size: 2rem; margin-bottom: 10px;">🍀</div>
-                <span style="font-size: 0.85rem; font-weight: bold; color: #2b6cb0; text-transform: uppercase;">Paso 3</span>
-                <h4 style="margin: 5px 0 10px; color: #1a365d; font-size: 1.2rem;">3 Sorteos Diarios</h4>
-                <p style="color: #4a5568; margin: 0; font-size: 0.95rem; line-height: 1.5;">De lunes a viernes tu número elegido participa automáticamente en las 3 oportunidades de ganar (100 Fr., 50 Fr. y 30 Fr.).</p>
-            </div>
-
-            <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
-                <div style="font-size: 2rem; margin-bottom: 10px;">📺</div>
-                <span style="font-size: 0.85rem; font-weight: bold; color: #2b6cb0; text-transform: uppercase;">Paso 4</span>
-                <h4 style="margin: 5px 0 10px; color: #1a365d; font-size: 1.2rem;">Sorteo en Vivo (8 PM)</h4>
-                <p style="color: #4a5568; margin: 0; font-size: 0.95rem; line-height: 1.5;">Presiona <strong>"Ver sorteo en vivo"</strong> en la App a las 20:00 hs para seguir la transmisión en directo por YouTube.</p>
-            </div>
-
-        </div>
-    </div>
-</section>
-        </div>
-    </div>
-</section>
-        <!-- Preguntas Frecuentes -->
-        <section>
-            <h2>Preguntas Frecuentes</h2>
-            <div class="faq-item">
-                <h3>¿Cómo se realiza el pago?</h3>
-                <p>El costo es de 15 CHF semanales y puedes gestionarlo o cancelarlo en cualquier momento.</p>
-            </div>
-            <div class="faq-item">
-                <h3>¿Cómo accedo tras suscribirme?</h3>
-                <p>Una vez confirmado tu registro, recibirás el acceso directo a nuestra comunidad y a todos los recursos disponibles.</p>
-            </div>
-        </section>
-        
-        <!-- Pie de página -->
-        <footer>
-            <p>&copy; 2026 Winner Europa. Todos los derechos reservados.</p>
-            <p>Protección de Datos: Toda comunicación e información compartida se trata de forma confidencial conforme a las normativas de protección de datos vigentes (nLPD / RGPD).</p>
-        </footer>
-    </div>
-    
 </body>
 </html>
