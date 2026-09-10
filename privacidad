@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad (nLPD) | Winner Europa</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background-color: #f7fafc;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+        h1 {
+            color: #1a365d;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #38a169;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2b6cb0;
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        p, li {
+            font-size: 0.98rem;
+            color: #4a5568;
+            margin-bottom: 12px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .highlight-box {
+            background-color: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        footer-link {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+        }
+        a {
+            color: #2b6cb0;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Política de Privacidad</h1>
+        <p><em>Conforme a la Ley Federal sobre la Protección de Datos de Suiza (nLPD)</em></p>
+
+        <div class="highlight-box">
+            <strong>Responsables del tratamiento:</strong> Winner Europa<br>
+            <strong>Ubicación:</strong> Meyrin, Cantón de Ginebra, Suiza<br>
+            <strong>Registro de Marca IGE/IPI:</strong> Clases 9, 35, 41<br>
+            <strong>Contacto de Protección de Datos:</strong> info@winnereuropa.com
+        </div>
+
+        <h2>1. Principios Generales</h2>
+        <p>De conformidad con la Ley Federal de Protección de Datos (nLPD) de Suiza, en <strong>Winner Europa</strong> nos comprometemos a tratar los datos personales de nuestros miembros de forma transparente, lícita y limitada estrictamente a las finalidades del servicio.</p>
+
+        <h2>2. Datos Personales Recopilados</h2>
+        <p>Para la prestación de nuestros servicios a través de la web y la aplicación móvil, recopilamos únicamente los siguientes datos indispensables:</p>
+        <ul>
+            <li><strong>Datos de Identificación:</strong> Nombre, apellidos y dirección de correo electrónico.</li>
+            <li><strong>Datos de Membresía:</strong> Estado de suscripción activa y código asignado para la jornada.</li>
+            <li><strong>Datos de Entrega de Premios:</strong> Dirección postal en Suiza (únicamente solicitada a los beneficiarios de bonos o tarjetas regalo físicas).</li>
+        </ul>
+
+        <h2>3. Finalidad del Tratamiento de Datos</h2>
+        <p>Sus datos personales se utilizan exclusivamente para:</p>
+        <ul>
+            <li>Gestionar el acceso y autenticación a la App oficial de Winner Europa.</li>
+            <li>Coordinar y validar la participación en las asignaciones de bonos y recompensas diarias.</li>
+            <li>Gestionar el envío digital o postal de las tarjetas regalo o cupones comerciales a los beneficiarios.</li>
+            <li>Enviar comunicaciones operativas sobre el estado de la suscripción o transmisiones comunitarias.</li>
+        </ul>
+
+        <h2>4. Conservación y Seguridad de la Información</h2>
+        <p>Los datos personales se conservan en entornos digitales seguros únicamente durante el tiempo que la membresía permanezca activa. Implementamos medidas técnicas y organizativas adecuadas para proteger sus datos contra el acceso no autorizado, pérdida o alteración.</p>
+
+        <h2>5. Transferencia a Terceros</h2>
+        <p><strong>Winner Europa no vende, alquila ni cede datos personales a terceros con fines comerciales.</strong> Los datos solo podrán compartirse con proveedores de servicios técnicos indispensables para el funcionamiento del servicio (por ejemplo, pasarelas de pago seguras o plataformas de distribución de aplicaciones) bajo estrictos acuerdos de confidencialidad.</p>
+
+        <h2>6. Derechos del Usuario en Suiza</h2>
+        <p>Conforme a los artículos 25 y siguientes de la nLPD, usted tiene derecho a:</p>
+        <ul>
+            <li><strong>Derecho de Acceso:</strong> Solicitar información sobre si tratamos sus datos personales y acceder a ellos.</li>
+            <li><strong>Derecho de Rectificación:</strong> Solicitar la corrección de datos inexactos o incompletos.</li>
+            <li><strong>Derecho de Supresión:</strong> Solicitar la eliminación de sus datos de nuestros registros al cancelar su membresía.</li>
+        </ul>
+        <p>Para ejercer cualquiera de estos derechos, puede escribir directamente a nuestro correo de contacto: <strong>info@winnereuropa.com</strong>.</p>
+
+        <h2>7. Transmisiones en Vivo (YouTube)</h2>
+        <p>Durante las emisiones comunitarias diarias por YouTube, únicamente se utiliza el <strong>código numérico o seudónimo</strong> asignado por el usuario. En ningún momento se publican en pantalla datos sensibles, direcciones o datos financieros de los miembros.</p>
+
+        <div style="margin-top: 40px; text-align: center;">
+            <p><a href="index.html">← Volver a la página principal</a> | <a href="bases-legales.html">Ver Bases Legales</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
