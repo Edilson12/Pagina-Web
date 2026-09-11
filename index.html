@@ -33,14 +33,25 @@
             text-align: center;
         }
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.2rem;
-            color: #e2e8f0;
-            max-width: 600px;
-            margin: 0 auto 25px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo-titulo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+@media (max-width: 480px) {
+    .logo-titulo {
+        width: 34px;
+        height: 34px;
+    }
         }
         .btn-app {
             display: inline-block;
@@ -164,9 +175,14 @@
 
     <!-- Encabezado / Hero Banner -->
     <header>
-        <h1>🌟 Winner Europa</h1>
-        <p>Tu comunidad de beneficios diarios en Suiza. Con tu membresía de 15 CHF a la semana accedes a recompensas y participas por hasta 180 CHF en tarjetas regalo todos los días.</p>
-        <a href="https://edilson12.github.io/winner-europa/" target="_blank" class="btn-app">🚀 Acceder a la App Winner Europa</a>
+        
+        <h1>
+         <img src="favicon.png" alt="Winner Europa" class="logo-titulo">
+         Winner Europa
+    </h1>
+    <p>Tu comunidad de beneficios diarios en Suiza...</p>
+    ...
+
     </header>
 
     <div class="container">
